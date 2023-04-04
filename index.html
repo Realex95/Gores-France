@@ -37,7 +37,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Gores France</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Site officiel du Discord</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Site officiel</h2>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <a href="https://discord.gg/adzQT2NW"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/BanniereD9.png" alt="image gores france" /></a>
                     </div>
                     <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
+                        <div class="text-center text-lg-left">
                             <h4 class="text-white">Discord</h4>
                             <p class="text-white-50 mb-0">Vous pouvez rejoindre le discord en cliquant sur l'image</p>
                         </div>
@@ -58,7 +58,9 @@
                 </div>
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7">
-                        <iframe class="responsive" src="https://koftw.github.io/KoG-Stats/index.html" height="500" width="100%"></iframe>
+                        <div class="responsive-iframe">
+                            <iframe src="https://koftw.github.io/KoG-Stats/index.html" frameborder="0"></iframe>
+                        </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="text-center text-lg-left">
@@ -67,9 +69,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center responsive">
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7">
-                        <iframe class="responsive" src="https://skins.tw/" height="500" width="100%"></iframe>
+                        <div class="responsive-iframe">
+                            <iframe src="https://skins.tw/" frameborder="0"></iframe>
+                        </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="text-center text-lg-left">
@@ -95,3 +99,29 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+<style>
+    .responsive-iframe {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 62.5%;
+        overflow: hidden;
+    }
+ 
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+    /* Définir la largeur et la hauteur pour les écrans plus grands que 992px */
+    @media screen and (min-width: 992px) {
+        .responsive-iframe {
+            padding-bottom: 50%;
+        }
+    }
+</style>
